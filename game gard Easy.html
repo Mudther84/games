@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Gard Game</title>
+    <link rel="stylesheet" href="css/game gard.css">
+</head>
+
+<body onload="orderFunction()">
+    <script src="js/game gard.js"></script>
+    <div class="one">
+        <div class="container">
+            <div class="name">
+                <span>G</span>ard <span>G</span>ame
+            </div>
+
+            <div class="count">
+             
+                <audio class="song" controls autoplay loop src="song.mp3" style="width: 150px;" >
+                </audio>
+            </div>
+        </div>
+
+        <div class="game-blocks">
+            <div class="game" id="0">
+                <div class="view front"></div>
+                <div class="view back">
+                    <img src="imags/0.jpg" alt="">
+                </div>
+            </div>
+            <div class="game" id="1">
+                <div class="view front"></div>
+                <div class="view back">
+                    <img src="imags/0.jpg" alt="">
+                </div>
+            </div>
+            <div class="game" id="2">
+                <div class="view front"></div>
+                <div class="view back">
+                    <img src="imags/1.png" alt="">
+                </div>
+            </div>
+            <div class="game" id="3">
+                <div class="view front"></div>
+                <div class="view back">
+                    <img src="imags/1.png" alt="">
+                </div>
+            </div>
+            <div class="game" id="4">
+                <div class="view front"></div>
+                <div class="view back">
+                    <img src="imags/2.jpg" alt="">
+                </div>
+            </div>
+            <div class="game" id="5">
+                <div class="view front"></div>
+                <div class="view back">
+                    <img src="imags/2.jpg" alt="">
+                </div>
+            </div>
+            <div class="game" id="6">
+                <div class="view front"></div>
+                <div class="view back">
+                    <img src="imags/3.png" alt="">
+                </div>
+            </div>
+            <div class="game" id="7">
+                <div class="view front"></div>
+                <div class="view back">
+                    <img src="imags/3.png" alt="">
+                </div>
+            </div>
+            <div class="game" id="8">
+                <div class="view front"></div>
+                <div class="view back">
+                    <img src="imags/4.png" alt="">
+                </div>
+            </div>
+            <div class="game" id="9">
+                <div class="view front"></div>
+                <div class="view back">
+                    <img src="imags/4.png" alt="">
+                </div>
+            </div>
+            <div class="game" id="10">
+                <div class="view front"></div>
+                <div class="view back">
+                    <img src="imags/5.jpg" alt="">
+                </div>
+            </div>
+            <div class="game" id="11">
+                <div class="view front"></div>
+                <div class="view back">
+                    <img src="imags/5.jpg" alt="">
+                </div>
+            </div>
+            <div class="game" id="12">
+                <div class="view front"></div>
+                <div class="view back">
+                    <img src="imags/6.jpg" alt="">
+                </div>
+            </div>
+            <div class="game" id="13">
+                <div class="view front"></div>
+                <div class="view back">
+                    <img src="imags/6.jpg" alt="">
+                </div>
+            </div>
+            <div class="game" id="14">
+                <div class="view front"></div>
+                <div class="view back">
+                    <img src="imags/7.jpg" alt="">
+                </div>
+            </div>
+            <div class="game" id="15">
+                <div class="view front"></div>
+                <div class="view back">
+                    <img src="imags/7.jpg" alt="">
+                </div>
+            </div>
+            <div class="game" id="16">
+                <div class="view front"></div>
+                <div class="view back">
+                    <img src="imags/8.jpg" alt="">
+                </div>
+            </div>
+            <div class="game" id="17">
+                <div class="view front"></div>
+                <div class="view back">
+                    <img src="imags/8.jpg" alt="">
+                </div>
+            </div>
+            <div class="game" id="18">
+                <div class="view front"></div>
+                <div class="view back">
+                    <img src="imags/9.jpg" alt="">
+                </div>
+            </div>
+            <div class="game" id="19">
+                <div class="view front"></div>
+                <div class="view back">
+                    <img src="imags/9.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script>
+    function orderFunction() {
+        for (i = 0; i <= 19; i++) {
+            document.getElementById(`${i}`).style.order = Math.floor(Math.random() * 25)
+        }
+    }
+</script>
+
+</html>
